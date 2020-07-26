@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnalogClockView">
+        <attr name="displaySecondHand" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="DigitalClockView">
+        <attr name="displaySecond" format="boolean" />
+    </declare-styleable>
+</resources>

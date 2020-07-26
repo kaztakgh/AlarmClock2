@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">AlarmClock</string>
+    <string name="tab_clock">Clock</string>
+    <string name="tab_alarm">Alarm</string>
+    <string name="tab_setting">Setting</string>
+    <string name="title_alarm_setting">アラーム設定</string>
+    <string name="title_alarm_add">アラーム追加</string>
+    <string name="title_alarm_modify">アラーム設定変更</string>
+    <string name="title_holiday">祝日一覧</string>
+    <string name="menu_title_alarm_add">登録</string>
+    <string name="menu_title_alarm_modify">変更</string>
+    <string name="menu_title_alarm_delete">削除</string>
+    <string name="menu_general_setting">設定</string>
+    <string name="menu_holiday">祝日一覧</string>
+    <string name="menu_update_holiday">更新</string>
+    <string name="button_stop">Stop</string>
+    <string name="button_snooze">Snooze</string>
+    <string name="no_alarms">No Alarms.</string>
+    <string name="no_repeat_week">繰り返し無し</string>
+    <string name="week_sun">日曜日</string>
+    <string name="week_mon">月曜日</string>
+    <string name="week_tue">火曜日</string>
+    <string name="week_wed">水曜日</string>
+    <string name="week_thu">木曜日</string>
+    <string name="week_fri">金曜日</string>
+    <string name="week_sat">土曜日</string>
+    <string name="holiday_no_use">曜日のみで判断</string>
+    <string name="holiday_include">祝日を含める</string>
+    <string name="holiday_exclude">祝日を除外する</string>
+    <string name="sound_bell">Bell</string>
+    <string name="sound_drumroll">Drum Roll</string>
+    <string name="sound_horn">Horn</string>
+    <string name="sound_incoming">Incoming</string>
+    <string name="sound_siren">Siren</string>
+    <string name="sound_ufo">UFO</string>
+    <string name="sound_waltz">Waltz</string>
+
+    <string name="request_permission">ファイルへのアクセスが許可されました。先ほどのメニューを再度タップしてください。</string>
+    <string name="holiday_list_downloaded">祝日データを更新しました。</string>
+    <string name="alarm_record_delete_dialog_text">アラームを削除してよろしいでしょうか</string>
+    <string name="alarm_record_delete_yes">Yes</string>
+    <string name="alarm_record_delete_no">No</string>
+    <string name="alarm_record_register">アラームを登録しました</string>
+    <string name="alarm_record_register_failed">アラームの登録に失敗しました</string>
+    <string name="alarm_record_delete_failed">アラームの削除に失敗しました</string>
+    <string name="alarm_record_invalid_filename">ファイルの指定をしてください</string>
+
+    <string name="alarm_set">アラームをセットしました</string>
+    <string name="alarm_cancel">アラームを解除しました</string>
+    <string name="alarm_delete">アラームを削除しました</string>
+
+    <dimen name="analog_clock_size_dp">200dp</dimen>
+
+</resources>

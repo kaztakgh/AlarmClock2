@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    タグ名、属性はlowerCamelCaseで記述
+    固定値である場所のみを記述
+ -->
+<settingItems>
+    <switch name="alarmOnOff">
+        <title>アラームON/OFF</title>
+        <stateOnText>ON</stateOnText>
+        <stateOffText>OFF</stateOffText>
+    </switch>
+    <inputText name="alarmName">
+        <title>アラーム名</title>
+        <length>32</length>
+    </inputText>
+    <time name="alarmTime">
+        <title>時刻</title>
+        <requestCode>102</requestCode>
+    </time>
+    <multiSelect name="repeatWeek">
+        <title>繰り返し曜日</title>
+        <options>
+            <item>
+                <text>@string/week_sun</text>
+            </item>
+            <item>
+                <text>@string/week_mon</text>
+            </item>
+            <item>
+                <text>@string/week_tue</text>
+            </item>
+            <item>
+                <text>@string/week_wed</text>
+            </item>
+            <item>
+                <text>@string/week_thu</text>
+            </item>
+            <item>
+                <text>@string/week_fri</text>
+            </item>
+            <item>
+                <text>@string/week_sat</text>
+            </item>
+        </options>
+        <nothingSelectedText>繰り返し無し</nothingSelectedText>
+        <requestCode>103</requestCode>
+    </multiSelect>
+    <switch name="holidayRepeat">
+        <title>祝日の繰り返し設定</title>
+        <stateOnText>使用する</stateOnText>
+        <stateOffText>使用しない</stateOffText>
+    </switch>
+    <spinner name="useFile">
+        <title>アラーム音設定方法</title>
+        <options>
+            <item>
+                <text>プリセット音</text>
+            </item>
+            <item>
+                <text>ファイルから</text>
+            </item>
+        </options>
+    </spinner>
+    <singleSelect name="soundSelect">
+        <title>アラーム音選択</title>
+        <options>
+            <item>
+                <text>@string/sound_bell</text>
+                <soundId>@raw/bell</soundId>
+            </item>
+            <item>
+                <text>@string/sound_drumroll</text>
+                <soundId>@raw/drumroll</soundId>
+            </item>
+            <item>
+                <text>@string/sound_horn</text>
+                <soundId>@raw/horn</soundId>
+            </item>
+            <item>
+                <text>@string/sound_incoming</text>
+                <soundId>@raw/incoming</soundId>
+            </item>
+            <item>
+                <text>@string/sound_siren</text>
+                <soundId>@raw/siren</soundId>
+            </item>
+            <item>
+                <text>@string/sound_waltz</text>
+                <soundId>@raw/waltz</soundId>
+            </item>
+        </options>
+        <requestCode>106</requestCode>
+    </singleSelect>
+    <storageFile name="alarmSoundFile">
+        <title>アラーム音に使用するファイル</title>
+        <mimeType>audio/*</mimeType>
+        <requestCode>107</requestCode>
+    </storageFile>
+    <seekBar name="volume">
+        <title>音量</title>
+        <divide>5</divide>
+    </seekBar>
+    <switch name="vibrate">
+        <title>アラーム発動時バイブレーション</title>
+        <stateOnText>ON</stateOnText>
+        <stateOffText>OFF</stateOffText>
+    </switch>
+    <spinner name="snoozeTimeDuration">
+        <title>スヌーズ時間間隔</title>
+        <options>
+            <item>
+                <text data-minute="1">1分</text>
+           </item>
+            <item>
+                <text data-minute="2">2分</text>
+            </item>
+            <item>
+                <text data-minute="5">5分</text>
+            </item>
+            <item>
+                <text data-minute="10">10分</text>
+            </item>
+            <item>
+                <text data-minute="15">15分</text>
+            </item>
+            <item>
+                <text data-minute="20">20分</text>
+            </item>
+            <item>
+                <text data-minute="30">30分</text>
+            </item>
+        </options>
+    </spinner>
+    <spinner name="snoozeCount">
+        <title>スヌーズ回数</title>
+        <options>
+            <item>
+                <text data-time="0">なし</text>
+            </item>
+            <item>
+                <text data-time="1">1回</text>
+            </item>
+            <item>
+                <text data-time="2">2回</text>
+            </item>
+            <item>
+                <text data-time="3">3回</text>
+            </item>
+            <item>
+                <text data-time="4">4回</text>
+            </item>
+            <item>
+                <text data-time="5">5回</text>
+            </item>
+        </options>
+    </spinner>
+</settingItems>

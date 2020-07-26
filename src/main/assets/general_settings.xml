@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<settingItems>
+    <header name="clock">
+        <title>時計</title>
+    </header>
+    <spinner name="clockType">
+        <title>時計表示</title>
+        <options>
+            <item clockType="digital">
+                <text>デジタル</text>
+            </item>
+            <item clockType="analog">
+                <text>アナログ</text>
+            </item>
+        </options>
+    </spinner>
+    <switch name="clockSecond">
+        <title>秒表示</title>
+        <stateOnText>表示する</stateOnText>
+        <stateOffText>表示しない</stateOffText>
+    </switch>
+    <header name="display">
+        <title>画面</title>
+    </header>
+    <singleSelect name="theme">
+        <title>テーマ</title>
+        <options>
+            <item theme="system">
+                <text>システムのテーマ</text>
+            </item>
+            <item theme="light">
+                <text>ライト</text>
+            </item>
+            <item theme="dark">
+                <text>ダーク</text>
+            </item>
+        </options>
+        <requestCode>205</requestCode>
+    </singleSelect>
+    <header name="alarm">
+        <title>アラーム全般</title>
+    </header>
+    <spinner name="alarmRingTime">
+        <title>消音までの時間</title>
+        <options>
+            <item ringSec="30">
+                <text>30秒</text>
+            </item>
+            <item ringSec="60">
+                <text>1分</text>
+            </item>
+            <item ringSec="120">
+                <text>2分</text>
+            </item>
+            <item ringSec="300">
+                <text>5分</text>
+            </item>
+        </options>
+    </spinner>
+    <spinner name="modePriority">
+        <title>優先モード</title>
+        <options>
+            <item mode="normal">
+                <text>通常(アラーム音を鳴らす)</text>
+            </item>
+            <item mode="silent">
+                <text>マナーモードを優先する</text>
+            </item>
+        </options>
+    </spinner>
+</settingItems>

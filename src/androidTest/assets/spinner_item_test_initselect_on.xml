@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<spinner name="spinnerTest">
+    <title>プルダウン選択肢</title>
+    <options>
+        <item>
+            <text>選択肢1</text>
+        </item>
+        <item>
+            <text>選択肢2</text>
+        </item>
+        <item>
+            <text>選択肢3</text>
+        </item>
+    </options>
+    <initSelect>1</initSelect>
+</spinner>

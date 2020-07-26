@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<switch name="switchTest">
+    <title>スイッチ項目</title>
+    <enabled>false</enabled>
+    <checked>false</checked>
+    <stateOnText>ON</stateOnText>
+    <stateOffText>OFF</stateOffText>
+</switch>

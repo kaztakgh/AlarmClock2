@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<seekBar name="seekbarTest">
+    <title>シークバーテスト</title>
+    <max>50</max>
+    <min>-50</min>
+    <init>10</init>
+    <divide>-5</divide>
+    <unit>point</unit>
+</seekBar>
