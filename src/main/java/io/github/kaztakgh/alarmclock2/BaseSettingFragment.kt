@@ -87,14 +87,14 @@ abstract class BaseSettingFragment
         // navigationIconをクリックした場合
         view.tb_setting.setNavigationOnClickListener {
             // アラーム一覧画面に戻る
-            requireFragmentManager().popBackStack()
+            parentFragmentManager.popBackStack()
         }
 
         // Backボタンが押されたときの処理
         view.setOnKeyListener { _, keyCode, event ->
             if(event.action == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_BACK) {
                 // アラーム一覧画面に戻る
-                requireFragmentManager().popBackStack()
+                parentFragmentManager.popBackStack()
                 return@setOnKeyListener true
             }
             return@setOnKeyListener false

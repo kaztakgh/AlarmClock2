@@ -128,7 +128,7 @@ class MainPagerFragment
                 // 設定
                 R.id.menu_general_setting -> {
                     // viewPagerの画面よりも上側に絵画するため、親フラグメントを変更する
-                    val fragmentTransaction = requireFragmentManager().beginTransaction()
+                    val fragmentTransaction = parentFragmentManager.beginTransaction()
                     val fragment = GeneralSettingsFragment()
                     fragmentTransaction.addToBackStack(null)
                     fragmentTransaction.replace(R.id.main_container, fragment)
@@ -138,7 +138,7 @@ class MainPagerFragment
                 // 祝日一覧
                 R.id.menu_holiday -> {
                     // viewPagerの画面よりも上側に絵画するため、親フラグメントを変更する
-                    val fragmentTransaction = requireFragmentManager().beginTransaction()
+                    val fragmentTransaction = parentFragmentManager.beginTransaction()
                     val fragment = HolidayListFragment()
                     fragmentTransaction.addToBackStack(null)
                     fragmentTransaction.replace(R.id.main_container, fragment)

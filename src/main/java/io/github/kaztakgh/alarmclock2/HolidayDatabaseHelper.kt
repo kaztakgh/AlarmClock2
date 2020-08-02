@@ -264,13 +264,12 @@ class HolidayDatabaseHelper(
             .append(")")
         // 値の挿入
         val selectionArray = arrayOfNulls<String>(deleteModels.size)
-        val dateArray = arrayListOf<String>()
+        val deleteDateArray = arrayListOf<String>()
         deleteModels.forEach {
-            dateArray.add(android.text.format.DateFormat.format("yyyy-MM-dd", it.date).toString())
+            deleteDateArray.add(android.text.format.DateFormat.format("yyyy-MM-dd", it.date).toString())
         }
 
         // 削除の実行
-        // TODO:selectionArrayの挿入チェック
-        return db.delete(TABLE_NAME, selectionBuilder.toString(), deleteModels.toArray(selectionArray))
+        return db.delete(TABLE_NAME, selectionBuilder.toString(), deleteDateArray.toArray(selectionArray))
     }
 }

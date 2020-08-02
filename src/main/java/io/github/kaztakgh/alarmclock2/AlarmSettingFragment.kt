@@ -476,7 +476,7 @@ class AlarmSettingFragment
         Toast.makeText(requireActivity(), toastText, Toast.LENGTH_SHORT).show()
 
         // アラーム一覧画面に戻る
-        requireFragmentManager().popBackStack()
+        parentFragmentManager.popBackStack()
     }
 
     /**
@@ -530,7 +530,7 @@ class AlarmSettingFragment
         alarmRecordDatabase.close()
 
         // アラーム一覧画面に戻る
-        requireFragmentManager().popBackStack()
+        parentFragmentManager.popBackStack()
     }
 
     /**
@@ -578,7 +578,7 @@ class AlarmSettingFragment
         }
 
         // アラーム一覧画面に戻る
-        requireFragmentManager().popBackStack()
+        parentFragmentManager.popBackStack()
     }
 
     /**

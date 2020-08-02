@@ -126,7 +126,7 @@ class AlarmListFragment
         settingFragment.arguments = args
 
         // viewPagerの画面よりも上側に絵画するため、親フラグメントを変更する
-        val fragmentTransaction = requireParentFragment().requireFragmentManager().beginTransaction()
+        val fragmentTransaction = requireParentFragment().parentFragmentManager.beginTransaction()
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.replace(R.id.main_container, settingFragment)
         fragmentTransaction.commit()
@@ -219,7 +219,7 @@ class AlarmListFragment
             args.putInt(AlarmDeleteDialog.DIALOG_REQUEST_CODE, position)
             dialog.arguments = args
             dialog.setTargetFragment(this@AlarmListFragment, position)
-            dialog.show(requireFragmentManager(), "alarmDelete")
+            dialog.show(parentFragmentManager, "alarmDelete")
         }
     }
 
